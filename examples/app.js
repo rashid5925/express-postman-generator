@@ -10,9 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/api/users', userRoutes);
-app.use('/api/products', productRoutes);
-app.use('/api/auth', authRoutes);
+app.use('/api/users-routes', userRoutes);
+app.use('/api/products-routes', productRoutes);
+app.use('/api/auth-routes', authRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
